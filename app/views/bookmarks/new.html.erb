@@ -1,0 +1,13 @@
+<div class="contrainer">
+  <div class="row justify-content-center">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <h1>New Bookmark</h1>
+
+      <%= simple_form_for [@list, @bookmark] do |f| %>
+        <%= f.association :movie %>
+        <%= f.submit %>
+      <% end %>
+
+    </div>
+  </div>
+</div>
