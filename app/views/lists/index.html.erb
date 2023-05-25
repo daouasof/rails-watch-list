@@ -1,0 +1,14 @@
+<div class="contrainer">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <h1>Lists'list</h1>
+
+      <ul class="list-group">
+      <% List.all.each do |list| %>
+        <li class="list-group-item"><%= list.name %></li>
+      <% end %>
+
+      </ul>
+    </div>
+  </div>
+</div>
