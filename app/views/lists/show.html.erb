@@ -1,0 +1,15 @@
+<div class="contrainer">
+  <div class="row justify-content-center">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <h1>List "<%= @list.name %>"</h1>
+
+      <ul class="list-group">
+      <% @list.movies.each do |movie| %>
+        <li class="list-group-item"><%= movie.title %></li>
+      <% end %>
+      <%= link_to "back to lists'list", lists_path, class: "btn btn-link" %>
+
+      </ul>
+    </div>
+  </div>
+</div>

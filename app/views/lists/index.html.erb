@@ -1,14 +1,18 @@
 <div class="contrainer">
   <div class="row justify-content-center">
-    <div class="col-6">
+    <div class="col-10 col-sm-8 col-lg-6">
       <h1>Lists'list</h1>
 
       <ul class="list-group">
       <% List.all.each do |list| %>
-        <li class="list-group-item"><%= list.name %></li>
+        <li class="list-group-item">
+        <%= link_to list.name, list_path(list.id) %>
+        </li>
       <% end %>
-
       </ul>
+
+      <%= link_to "create a new list", new_list_path, class: "btn btn-primary mt-3 rounded" %>
+
     </div>
   </div>
 </div>

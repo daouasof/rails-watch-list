@@ -1,0 +1,15 @@
+<div class="contrainer">
+  <div class="row justify-content-center">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <h1>Create a new list</h1>
+
+      <%= simple_form_for @list do |f| %>
+        <%= f.input :name %>
+        <%= f.submit %>
+      <% end %>
+      <%= link_to "back to the list", lists_path, class:'btn btn-link' %>
+
+      </ul>
+    </div>
+  </div>
+</div>
