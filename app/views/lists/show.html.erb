@@ -3,13 +3,14 @@
     <div class="col-10 col-sm-8 col-lg-6">
       <h1>List "<%= @list.name %>"</h1>
 
-      <ul class="list-group">
+      <ul class="list-group mb-3">
       <% @list.movies.each do |movie| %>
         <li class="list-group-item"><%= movie.title %></li>
       <% end %>
-      <%= link_to "back to lists'list", root_path, class: "btn btn-link" %>
 
       </ul>
+      <%= link_to "Add a bookmark",  new_list_bookmark_path(@list) , class: "btn rounded btn-primary" %>
+      <%= link_to "back to lists'list", root_path, class: "btn btn-link" %>
     </div>
   </div>
 </div>
