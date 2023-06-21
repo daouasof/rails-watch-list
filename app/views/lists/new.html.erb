@@ -1,15 +1,18 @@
-<div class="contrainer">
+<div class="container">
   <div class="row justify-content-center">
     <div class="col-10 col-sm-8 col-lg-6">
       <h1>Create a new list</h1>
 
       <%= simple_form_for @list do |f| %>
+      <div class="form-new">
         <%= f.input :name %>
+        <%= f.input :photo, as: :file, label: "Picture" %>
         <%= f.submit %>
+      </div>
       <% end %>
-      <%= link_to "back to the list", root_path, class:'btn btn-link' %>
+      <%= link_to "back to the list", root_path, class:'btn btn-link px-0' %>
 
-      </ul>
+
     </div>
   </div>
 </div>

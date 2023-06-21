@@ -1,0 +1,10 @@
+<div class="card-list">
+  <% if list.photo.key.present? %>
+    <%= cl_image_tag list.photo.key %>
+    <% else %>
+    <%= image_tag "movie_time.jpg" %>
+  <% end %>
+  <div class="card-list-infos">
+    <h2><%= list.name %></h2>
+  </div>
+</div>
