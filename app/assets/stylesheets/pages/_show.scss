@@ -1,0 +1,15 @@
+.show-banner {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+
+  h1 {
+    color: white;
+
+  }
+}
