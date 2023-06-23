@@ -14,4 +14,32 @@ puts "Generating 15 movies"
   )
   puts "Movie with id #{movie.id} generated"
 end
+
+action = List.new(name: 'Action')
+action.photo.attach(
+  io: File.open('app/assets/images/action_movie.jpg'),
+  filename: 'action_movie.jpg',
+  content_type: 'image/jpg'
+)
+action.save!
+puts "Action list created"
+
+romance = List.new(name: 'Romance')
+romance.photo.attach(
+  io: File.open('app/assets/images/romance_movie.jpg'),
+  filename: 'romance_movie.jpg',
+  content_type: 'image/jpg'
+)
+romance.save!
+puts "Romance list created"
+
+comedy = List.new(name: 'Comedy')
+comedy.photo.attach(
+  io: File.open('app/assets/images/comedy_movie.jpg'),
+  filename: 'comedy_movie.jpg',
+  content_type: 'image/jpg'
+)
+comedy.save!
+puts "Comedy list created"
+
 puts 'all done'

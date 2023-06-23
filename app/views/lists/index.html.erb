@@ -6,7 +6,7 @@
       <div class="list-group">
       <% List.all.each do |list| %>
         <%= link_to list_path(list.id) do %>
-          <%= render "list", list: list %>
+          <%= render "list_card", list: list %>
         <% end %>
       <% end %>
       </div>
