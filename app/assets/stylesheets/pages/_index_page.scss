@@ -1,0 +1,13 @@
+.banner {
+  background-image: url('projection.jpg');
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.banner h1 {
+  color:white;
+  margin-left: 100px;
+}
